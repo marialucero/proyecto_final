@@ -1,0 +1,461 @@
+/*Reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: white;
+}
+/*Links*/
+a {
+    color: black;
+    text-decoration: none;
+}
+/*Títulos y subtítulos*/
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+h2 {
+    font-family:'Roboto', sans-serif;
+    color: black; 
+}
+/*Animación*/
+.degradeTop {
+    background: linear-gradient(to top,#000000, #CF2525);
+}
+.animacionLogo {
+    animation-duration: 3s;
+    animation-name: aparecer;
+}
+.animacionBanner {
+    animation-duration: 3s;
+    animation-name: aparecer;
+}
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*Header*/
+header {
+    color: black;
+    background-color: white;
+    width: inherit;
+    padding: 0rem 5rem;
+}
+#main {
+    display: grid;
+    grid-template-columns: 63% auto ;
+    grid-template-rows:auto;
+    width: inherit;
+    justify-content:space-around;
+    align-items: center;
+ 
+}
+#main img {
+    width: 250px;
+    height: 150px;
+}
+#main ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px 0px;
+    margin-right: 60px;
+}
+#main ul li {
+    padding: 5px; 
+}
+#main ul li img {
+    width: 32px;
+    height: 32px;
+}
+/*Bootstrap*/
+.menuBS {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+/*Menú*/
+.MainNav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+    font-size: 16px;
+    /* border: 1px solid;
+    /* border-top-color: black;
+    border-bottom-color: black;
+    border-right-color: transparent;
+    border-left-color: transparent; */ 
+    padding: 5px;
+}
+.MainNav ul li {
+    margin: 0px 10px;
+    padding: 5px 5px; 
+}
+.MainNav ul li a:hover { /*modifico la apariencia del menu general cuando se posa el mouse sobre los li*/
+    color:#CF2525;
+}
+
+
+/*Párrafos*/
+p {
+    padding: 5px;
+    word-spacing: 2px;
+    margin-bottom:5px;
+}
+/*Títulos*/
+
+/*Inicio*/
+#home {
+    display: grid;
+    grid-template-areas: 
+    "aside HomeDos"
+    "aside HomeUno"
+    "footer footer";
+    grid-template-columns: 23% 60%;
+    grid-template-rows: 60% 40%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 50vh;
+    justify-content: center;
+}
+section#HomeUno {
+    grid-area: HomeUno;
+    font-family: 'Roboto',sans-serif; 
+    justify-self: center;
+    align-self:initial;
+    margin: 10px;
+}
+section#HomeUno img {
+    width: 850px;
+    height: auto;
+}
+section#HomeDos {
+    color:black;
+    grid-area: HomeDos;
+    background-color:transparent;
+    padding: 10px;
+    text-align: justify center;
+    border: 2px solid black;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color:black;
+    align-self: center;
+ 
+}
+aside {
+    grid-area: aside;
+    background-color: transparent;
+    justify-self:flex-start;
+    align-self: center;
+
+}
+aside img {
+    width:auto;
+    height:auto;
+}
+
+footer {
+    bottom: 0;
+    position:fixed;
+    width: 100%;
+    grid-area: footer;
+    color: white;
+    background-color: black;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: white;
+}
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    font-size: 14px;
+}
+footer ul li {
+    padding: 5px 2px;
+    margin: 10px 2px;
+}
+footer ul li img {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+/*productos.html*/
+#productos {
+    display: grid;
+    grid-template-areas: 
+    "panificados dulces frio snacks";
+    grid-template-columns: 20% 20% 20% 20%;
+    height: 35vh;
+    justify-content: center;
+}
+section#panificados {
+    grid-area: panificados;
+    background-color: white;
+    font-family: 'Roboto',sans-serif;
+    justify-self: center;
+}
+section#dulces {
+    grid-area: dulces;
+    background-color: white;
+    font-family: 'Roboto',sans-serif;
+    justify-self: center;
+}
+section#frio {
+    grid-area: frio;
+    background-color: white;
+    font-family: 'Roboto',sans-serif;
+    justify-self: center;
+}
+section#snacks {
+    grid-area: snacks;
+    background-color: white;
+    font-family: 'Roboto',sans-serif;
+    justify-self: center;
+
+}
+#productos img {
+    width: 250px;
+    height: 250px;
+}
+/*contacto.html*/
+
+form {
+    background-color: #F2F2F2;
+    padding: 20px;
+}
+form textarea {
+    padding: 5px;
+}
+form select {
+    margin: 10px 0px;
+}
+form label {
+    margin: 0px 5px;
+}
+
+/*quienes_somos.html*/
+#quienesSomos {
+    display: grid;
+    grid-template-areas: 
+    "historia";
+    grid-template-columns: 70%;
+    height: 60vh;
+    justify-content: center;
+}
+section#historia{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #CF2525;
+    padding: 20px;
+}
+#quienesSomos h2 {
+    background-color: white;
+    color:black;
+    text-align: center;
+    font-style: italic;
+}
+/*servicios.html*/
+#servicios {
+    display: grid;
+    grid-template-areas: 
+    "mayorista minorista";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+    padding: 20px 80px;
+    margin: 20px;
+}
+section#mayorista {
+    grid-area: mayorista;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    width: inherit;
+}
+section#minorista {
+    grid-area: minorista;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    width: inherit;
+}
+.titleServicios {
+    background-color: #CF2525;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+/*Estilos de fuentes*/
+.italica { 
+    font-style: italic;
+}
+.normal {
+    font-style: normal;
+}
+.negrita {
+    font-weight: bold;
+}
+.aLaDerecha {
+    text-align: right;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+
+/*Media Querie*/
+@media only screen and (max-width: 420px) {
+    header {
+        font-family: 'Roboto', sans-serif;
+        background-color: white;
+        width: inherit;
+        padding: 0rem;
+    }
+    h1 {
+        display: none;
+    }
+    #main {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:auto;
+        width: inherit;
+        height: 20vh;
+        justify-content: center;
+    }  
+    #main img {
+        width: 250px;
+        height: 150px;
+    }
+    #main ul {
+      display: none;
+    }
+    .MainNav {
+        display: none;
+    }
+    
+    p {
+        padding: 5px; 
+        word-spacing: 0px;
+    }
+    #home {
+        display: grid;
+        grid-template-areas:
+        "HomeUno"
+        "aside"
+        "HomeDos"
+        "footer";
+        grid-template-columns: 90% ;
+        grid-template-rows: 0% auto 1fr 1fr;
+        grid-row-gap: 15px;
+        justify-content: center;
+        height: auto;
+        background-color:transparent;
+    }
+    section#HomeUno {
+        display: none;
+        grid-area: HomeUno;
+        align-items: center;
+    }
+    section#HomeUno img {
+        width: 400px;
+        height: 150px;
+    }
+    section#HomeDos {
+        color:black;
+        grid-area: HomeDos;
+        background-color:transparent;
+        text-align: justify;
+        border: solid 1.5px black;
+        border-top-color: black;
+        border-bottom-color: black;
+        border-right-color: transparent;
+        border-left-color: transparent;
+
+    }
+    aside {
+        grid-area: aside;
+        justify-self: center;
+    }
+    aside img {
+        width: auto ;
+        height: auto;
+    }
+    footer {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        grid-area: footer;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        background-color: black;
+    }
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    footer ul li {
+        padding: 10px; 
+        margin: 10px;
+    }
+    footer ul li img {
+        width: 24px;
+        height: 24px;
+    }
+    #quienesSomos {
+        display: grid;
+        grid-template-areas: 
+        "historia";
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    section#historia{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: white;
+        background-color: #CF2525;
+        padding: 5px 20px 60px 20px;
+        text-align: justify;
+        margin: 5px;
+
+    }
+    #quienesSomos h2 {
+        background-color: white;
+        color:black;
+        text-align: center;
+        font-style: italic;
+    }
+} 
