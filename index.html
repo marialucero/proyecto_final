@@ -16,19 +16,18 @@
   <link rel="stylesheet" href="html/css/main.css">
   <title>Distribuidora Tres Marías</title>
 </head>
+
 <body>
   <header>
-    <div id="main">
-      <img src="HTML/images/tresmariascuatro.png" alt="imagen" class="animacionLogo">
-      <ul>
-        <li><a href="https://www.instagram.com/fargoacasa/"><img src="HTML/images/icons/windows10/instagramwhite.png"
-              alt="instagram"></a></li>
-        <li><a href="https://www.facebook.com/fargoacasa"><img src="HTML/images/icons/windows10/facebookwhite.png"
-              alt="facebook"></a></li>
-        <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"><img
-              src="HTML/images/icons/windows10/gmailwhite.png" alt="gmail"></a></li>
-      </ul>
-    </div>
+    <a href="index.html"><img src="html/images/tresmariascuatro.png" alt="imagen" class="animacionLogo"></a>
+    <ul>
+      <li><a href="https://www.instagram.com/fargoacasa/"><img
+            src="html/images/icons/material_filled/instagramwhiteone.png" alt="instagram"></a></li>
+      <li><a href="https://www.facebook.com/fargoacasa"><img
+            src="html/images/icons/material_filled/facebookwhiteone.png" alt="facebook"></a></li>
+      <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"><img
+            src="html/images/icons/material_filled/correowhiteone.png" alt="gmail"></a></li>
+    </ul>
   </header>
   <div class="d-none d-lg-block ">
     <div class="container-fluid d-flex justify-content-center bgNav mb-2 border-bottom border-2">
@@ -94,17 +93,17 @@
       </nav>
     </div>
   </div>
-  <div id="home">
-    <section id="HomeUno">
-      <img src="html/images/banner_4.png" alt="banneruno" class="animacionBanner img-fluid">
-    </section>
+  <div id="home" class="container border-end border-start">
     <section id="HomeDos">
       <p class="lead">Somos una distribuidora mayorista ubicada en la <span class="negrita">Ciudad Autónoma de Buenos
-          aires</span>, con una trayectoria de 10 años en el rubro.</p>
-      <p class="lead">Trabajamos con marcas de <span class="negrita">primera calidad</span>, reconocidas en el mercado.
+          Aires</span>, con una trayectoria de 10 años en el rubro.</p>
+      <p class="lead">Trabajamos con marcas de <span class="negrita"><a href="html/pages/productos.html">primera calidad</a></span>, reconocidas en el mercado.
         Constantemente buscamos incorporar nuevas marcas que reflejan nuestros valores
         como empresa, con el objetivo de crecer e innovarnos día a día.
       </p>
+      <p class="lead">Contamos con dos unidades de trabajo, para saber más sobre nuestros servicios, envíos y áreas de distribución, haga click <a href="html/pages/servicios.html" class="negrita">acá</a>.</p>
+      <img src="html/images/banner_4.png" alt="banner" class="animacionBanner img-fluid">
+
     </section>
     <aside>
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -139,33 +138,86 @@
         </button>
       </div>
     </aside>
-    
+    <section id="rrss">
+      <p class="lead">En redes sociales nos dedicamos a impulsar nuestro negocio minorista de envíos a domicilio. Nos encontramos en Instagram y Facebook. Te invitamos a visitar uno de nuestros perfiles:</p>
+      <div data-mc-src="4472456c-2487-403c-80b7-549fe5680104#instagram"></div>
+      <script src="https://cdn2.woxo.tech/a.js#61c13a449f35280016f7d388" async data-usrc>
+      </script>
+    </section>
+
+     
   </div>
-  
   <footer>
-    <div class="row justify-content-evenly align-items-center">
-      <div class="col-sm-6 col-md-4">
-        <ul>
-          <li><a href="https://www.instagram.com/fargoacasa/"> <img
-                src="html/images/icons/material_filled/instagramwhite.png" class="img-fluid"></a></li>
-          <li><a href="https://www.facebook.com/fargoacasa"><img src="html/images/icons/material_filled/facebookwhite.png"
-                class="img-fluid"></a></li>
-          <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"><img
-                src="html/images/icons/material_filled/correowhite.png" class="img-fluid">
-              </a></li>
-        </ul>
+    <!--Medium, large y xxl-->
+    <div class="container-fluid d-none d-md-block d-lg-block d-xl-block">
+      
+      <div class="row align-items-center justify-content-center ">
+        <div class="col-md-2 col-lg-3 ">
+          <p class="italica text-center"> Seguinos en redes</p>
+          <ul class="ps-0">
+            <li><a href="https://www.instagram.com/fargoacasa/"><img
+                  src="html/images/icons/material_filled/instagramwhiteone.png" alt="instagram"></a></li>
+            <li><a href="https://www.facebook.com/fargoacasa"><img
+                  src="html/images/icons/material_filled/facebookwhiteone.png" alt="facebook"></a></li>
+          </ul>
+        </div>
+        <div class="col-md-5 col-lg-4  ps-5 d-flex justify-content-center ">
+          <ul class=" ps-0 flex-column">
+            <li><a href="http://walink.co/5cbdbd" alt?="linkwhatsapp"><img src="html/images/icons/material_filled/whatsappwhite.png" alt="whatsapp"
+              class="imgColDos me-1">Habla con nosotros</a></li>
+            <li><img src="html/images/icons/material_filled/correowhite.png" alt="correo"
+                class="imgColDos me-1">distribuye3marias@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-md-5 p-0">
+          <ul class="ps-0">
+            <li class="border-end text-center"><a href="html/pages/quienes_somos.html">Nosotros</a></li>
+            <li class="border-end text-center"><a href="html/pages/contacto.html">Contacto</a></li>
+            <li class="border-end text-center"><a href="https://wa.me/c/5491173603674">Catálogo minorista</a></li>
+            <li><a href="html/pages/productos.html">Productos</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="botonWhatsApp">
-        <a href="http://walink.co/5cbdbd " target="_blank"><img src="html/images/logoWhatsapp.png" alt="http://walink.co/5cbdbd"></a>
-      </div>
+      
+     
+    </div>
+    <!--Mobile-->
+    <div class="container-fluid d-block d-sm-block d-md-none d-lg-none d-xl-none">
+      <div class="row align-items-center  ">
+        <div class="col align-self-center">
+          <ul class="ps-0">
+            <li class="border-end text-center"><a href="html/pages/quienes_somos.html">Nosotros</a></li>
+            <li class="border-end text-center"><a href="html/pages/contacto.html">Contacto</a></li>
+            <li class="border-end text-center"><a href="https://wa.me/c/5491173603674">Catálogo minorista</a></li>
+            <li><a href="html/pages/productos.html">Productos</a></li>
+          </ul>
+        </div>
+       
+        <div class="col-8 p-0">
+          <ul class="ps-0 flex-column ">
+            <li><a href="http://walink.co/5cbdbd" alt?="linkwhatsapp"> <img src="html/images/icons/material_filled/whatsappwhite.png" alt="whatsapp"
+              class="imgColDos me-1">Habla con nosotros</a></li>
+            <li><img src="html/images/icons/material_filled/correowhite.png" alt="correo"
+                class="imgColDos me-1">distribuye3marias@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          
+          <ul class="ps-0">
+            <li><a href="https://www.instagram.com/fargoacasa/"><img
+                  src="html/images/icons/material_filled/instagramwhiteone.png" alt="instagram"></a></li>
+            <li><a href="https://www.facebook.com/fargoacasa"><img
+                  src="html/images/icons/material_filled/facebookwhiteone.png" alt="facebook"></a></li>
+          </ul>
+        </div>
+      </div> 
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 </body>
-
 </html>
